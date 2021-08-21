@@ -94,7 +94,7 @@ print ("║0 Терминал    ║")
 term.setCursor (xCen-8, yCen+2)
 print ("╚══════════════╝")
 term.setCursor (xCen - (string.len(linedwn)/2)+2, yScr)
-print (string.sub(linedwn,1,xScr-9).." 2019")
+print (string.sub(linedwn,1,xScr-9).." 2021")
 shell.execute("cd //")
 end
 os.sleep(0.1)
@@ -108,11 +108,11 @@ local eventname, _, char, code = event.pull('key_down')
 	   term.clear()
        os.exit()
 	   elseif code == keys.one then
-	   shell.execute("dwnldr.lua")
+	   shell.execute("ethernet.lua")
 	   elseif code == keys.two then
-	   shell.execute("nc.lua")
+	   shell.execute("filemanager.lua")
 	   elseif code == keys.tri then
-	   shell.execute("hlplua.lua")
+	   shell.execute("help.lua")
        end
 	 end
 end
